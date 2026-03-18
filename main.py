@@ -1,7 +1,6 @@
 import json
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from functions import predict, compute_cost, gradient_descent
 
@@ -52,11 +51,11 @@ print(f"Końcowy błąd na testach: {final_test_cost:.2f}")
 print(f"Współczynnik R2: {r2:.4f}")
 
 # Wizualizacja: Rzeczywistość vs Predykcja
-plt.scatter(y_test_final, predictions_test, color='blue', alpha=0.5, label='Dane testowe')
-max_val = float(max(y_test_final.max(), predictions_test.max()))
-plt.plot([0, max_val], [0, max_val], color="black", linewidth=2, label='Idealne dopasowanie')
-plt.xlabel('Rzeczywiste koszty')
-plt.ylabel('Przewidziane koszty')
-plt.title('Skuteczność modelu regresji')
-plt.legend()
-plt.show()
+# plt.scatter(y_test_final, predictions_test, color='blue', alpha=0.5, label='Dane testowe')
+# max_val = float(max(y_test_final.max(), predictions_test.max()))
+# plt.plot([0, max_val], [0, max_val], color="black", linewidth=2, label='Idealne dopasowanie')
+# plt.xlabel('Rzeczywiste koszty')
+# plt.ylabel('Przewidziane koszty')
+# plt.title('Skuteczność modelu regresji')
+# plt.legend()
+# plt.show()
